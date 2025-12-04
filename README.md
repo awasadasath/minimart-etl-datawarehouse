@@ -1,3 +1,4 @@
+# 🏪 ETL Minimart Datamart & Analytics
 **End-to-end Data Engineering & Business Intelligence Project**
 
 This project demonstrates a complete data pipeline solution for a retail minimart business. It encompasses the entire data lifecycle—from data ingestion and cleaning (ETL) to data modeling (Star Schema), machine learning-based customer segmentation, and interactive dashboard visualization.
