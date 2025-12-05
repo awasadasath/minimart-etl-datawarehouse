@@ -36,9 +36,9 @@ The data pipeline flows from raw CSV ingestion through cleaning and modeling lay
 The raw dataset consists of **6 CSV files** simulating retail operations. Before processing, I performed a comprehensive data profiling audit and identified critical "Dirty Data" issues.
 
 ![Product Table Data Quality Issues](assets/ProductTableExample.png)
-![Customer Table Data Quality Issues](assets/data_quality_issues.png)
-![Sales Table Data Quality Issues](assets/data_quality_issues.png)
-![Store Table Quality Issues](assets/data_quality_issues.png)
+![Customer Table Data Quality Issues](assets/CustomerTableExample.png)
+![Sales Table Data Quality Issues](assets/SalesTableExample.png)
+![Store Table Quality Issues](assets/StoreTableExample.png)
 
 ### 🚨 Critical Issues Log:
 | Entity | Problem Detected | Impact |
@@ -101,18 +101,28 @@ With the Star Schema defined, I engineered a robust ETL workflow to clean, trans
 * **Destination:** **Microsoft SQL Server**.
 * **Mapping:** Mapped clean outputs directly to the `Fact` and `Dimension` tables defined in Section 2.
 * **Integrity:** Loaded Dimensions first to satisfy Foreign Key constraints.
-
+![Product Load](assets/product_query.png)
+![Customer Load](assets/customer_query.png)
+![Sales Load](assets/sales_query.png)
+![Store Load](assets/store_query.png)
 ---
 
 ## 🧠 4. Machine Learning & Analytics
 ### Customer Segmentation (Clustering)
 Utilized **K-Means Clustering** in **Altair AI Studio (RapidMiner)** to categorize customers based on RFM (Recency, Frequency, Monetary).
 
-![Clustering Analysis](assets/clustering_result.png)
+![Clustering Analysis](assets/clustering_workflow.png)
 
-**Key Findings:**
-* **🏆 Cluster 3 (The VIPs):** High spenders with high purchase frequency.
-* **⚠️ Cluster 4 & 5 (Churn Risk):** High "Recency" scores (haven't purchased in a long time).
+| Cluster | 🛒 Spending Behavior (Monetary & Frequency) | 🕒 Recency (Time since last visit) | 🏷️ Customer Segment |
+| :---: | :--- | :--- | :--- |
+| **Cluster 3** | 🟢 **Very High** (Top Spender) | 🟢 **Very Low** (Active recently) | **💎 VIP / Loyal Customers** |
+| **Cluster 4, 5** | 🔴 **Low** | 🔴 **Very High** (Inactive > 6 months) | **💤 Dormant / Churn Risk** |
+| **Cluster 0, 1, 2** | 🟡 **Moderate** | 🟡 **Moderate** | **🛒 Standard Customers** |
+
+### 💡 Strategic Action Plan:
+* **VIPs (Cluster 3):** Launch exclusive membership rewards to maintain loyalty.
+* **Churn Risk (Cluster 4, 5):** Re-activate with "We Miss You" coupons or limited-time offers.
+* **Standard (Cluster 0-2):** Focus on up-selling to increase basket size per visit.
 
 ---
 
