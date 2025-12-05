@@ -35,7 +35,10 @@ The data pipeline flows from raw CSV ingestion through cleaning and modeling lay
 ## 📂 1. Data Source & Quality Challenges
 The raw dataset consists of **6 CSV files** simulating retail operations. Before processing, I performed a comprehensive data profiling audit and identified critical "Dirty Data" issues.
 
-![Data Quality Issues](assets/data_quality_issues.png)
+![Product Table Data Quality Issues](assets/ProductTableExample.png)
+![Customer Table Data Quality Issues](assets/data_quality_issues.png)
+![Sales Table Data Quality Issues](assets/data_quality_issues.png)
+![Store Table Quality Issues](assets/data_quality_issues.png)
 
 ### 🚨 Critical Issues Log:
 | Entity | Problem Detected | Impact |
