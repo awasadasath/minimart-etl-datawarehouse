@@ -1,4 +1,9 @@
 # 🏪 Minimart Data Warehouse & Analytics
+![Microsoft SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
+![SAP PowerDesigner](https://img.shields.io/badge/SAP%20PowerDesigner-0FAAFF?style=for-the-badge&logo=sap&logoColor=white)
+![Tableau Prep Builder](https://img.shields.io/badge/Tableau%20Prep%20Builder-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+![Altair AI Studio](https://img.shields.io/badge/Altair%20AI%20Studio-FF4B1F?style=for-the-badge&logo=rapidminer&logoColor=white)
+![Tableau Desktop](https://img.shields.io/badge/Tableau%20Desktop-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 
 **End-to-End Data Engineering & Business Intelligence Project**
 
@@ -15,12 +20,14 @@ The goal is to transform raw, messy transaction data into high-quality insights 
 ---
 
 ## 🛠️ Tech Stack
-* **Database & Warehousing:** Microsoft SQL Server
-* **Data Modeling:** SAP PowerDesigner
-* **ETL & Data Prep:** Tableau Prep Builder
-* **Machine Learning:** Altair AI Studio (formerly RapidMiner)
-* **Visualization:** Tableau Desktop
 
+| Category | Tool | Description |
+| :--- | :--- | :--- |
+| **Database** | ![SQL Server](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white) | Used for data warehousing and storing relational data. |
+| **Data Modeling** | ![SAP PowerDesigner](https://img.shields.io/badge/SAP%20PowerDesigner-0FAAFF?style=for-the-badge&logo=sap&logoColor=white) | Used for designing conceptual, logical, and physical data models. |
+| **ETL & Prep** | ![Tableau Prep](https://img.shields.io/badge/Tableau%20Prep-E97627?style=for-the-badge&logo=tableau&logoColor=white) | Used for cleaning, shaping, and combining data before analysis. |
+| **Machine Learning** | ![RapidMiner](https://img.shields.io/badge/Altair%20AI%20Studio%20(RapidMiner)-FF4B1F?style=for-the-badge&logo=rapidminer&logoColor=white) | Used for building predictive models and data mining. |
+| **Visualization** | ![Tableau](https://img.shields.io/badge/Tableau%20Desktop-E97627?style=for-the-badge&logo=tableau&logoColor=white) | Used for creating interactive dashboards and business insights. |
 ---
 
 ## 🔄 System Architecture
