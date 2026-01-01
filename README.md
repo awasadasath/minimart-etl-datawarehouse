@@ -81,6 +81,10 @@ With the Star Schema defined, I engineered a robust ETL workflow to clean, trans
 
 ![ETL Flow Overview](assets/etl_flow_overview.png)
 
+![ETL Flow Overview](assets/etl_flow_overview1.png)
+
+![ETL Flow Overview](assets/etl_flow_overview2.png)
+
 ### 🧹 3.1 Customer Data Cleaning
 * **Email Correction:**
     * *Logic:* `REPLACE([Email], 'gmial', 'gmail')`
