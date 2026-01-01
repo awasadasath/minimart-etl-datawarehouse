@@ -60,7 +60,7 @@ The raw dataset consists of **6 CSV files** simulating retail operations. Before
 ## 🏗️ 2. Data Modeling (Star Schema)
 To ensure data integrity and optimize for analytical queries, I first designed the target data architecture using **SAP PowerDesigner** before implementing the ETL pipeline.
 
-![Star Schema Diagram](assets/star_schema.png)
+![Star Schema Diagram](assets/starschema.png)
 
 ### Schema Design (MS SQL Server Implementation):
 * **Fact Table:** `Fact_Sales`
